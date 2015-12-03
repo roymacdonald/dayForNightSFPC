@@ -14,6 +14,7 @@ void yeseulScene::setup(){
     
     loadCode("exampleScene/exampleCode.cpp");
     
+ setSceneName("yeseulScene");
     
 }
 

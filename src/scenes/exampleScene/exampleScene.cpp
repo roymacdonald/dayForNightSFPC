@@ -13,7 +13,7 @@ void exampleScene::setup(){
     parameters.add(width);
     
     loadCode("exampleScene/exampleCode.cpp");
-    
+    setSceneName("exampleScene");
     
 }
 

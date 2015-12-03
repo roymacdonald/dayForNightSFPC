@@ -6,7 +6,7 @@
 #include "baseScene.h"
 #include "ofxGui.h"
 #include "appConstants.h"
-
+#include "ofxParameterMidiSync.h"
 
 enum drawMode {
     DRAW_SIDE_BY_SIDE, DRAW_SINGLE
@@ -33,5 +33,10 @@ public:
     ofxPanel * panel;
     
     drawMode mode;
+    ofxParameterMidiSync sync;
+    
+    void learnMidi();
+    void saveLearnedMidi();
+    
     
 };

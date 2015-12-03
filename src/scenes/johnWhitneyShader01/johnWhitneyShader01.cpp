@@ -10,6 +10,9 @@ void johnWhitneyShader01::setup(){
     loadCode("johnWhitneyShader01/exampleCode.cpp");
     
     shader.load("johnWhitneyShader01/shader");
+    
+     setSceneName("johnWhitneyShader01");
+    
 }
 
 void johnWhitneyShader01::update() {

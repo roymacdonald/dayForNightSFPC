@@ -7,6 +7,7 @@ void robbyRileyScene::setup(){
     param.set("dent", 15, -10, 30);
     parameters.add(param);
     loadCode("robbyRileyScene/code.txt");
+     setSceneName("robbyRileyScene");
 }
 
 void robbyRileyScene::update(){

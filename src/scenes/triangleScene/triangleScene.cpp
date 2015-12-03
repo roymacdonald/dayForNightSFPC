@@ -13,6 +13,7 @@ void triangleScene::setup(){
     numTriangles.set("numTriangles", 5, 0, 100);
     parameters.add(numTriangles);
     loadCode("triangleScene/triangle.txt");
+     setSceneName("triangleScene");
     
 }
 void triangleScene::update(){

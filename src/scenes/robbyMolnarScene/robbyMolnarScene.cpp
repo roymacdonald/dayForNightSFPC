@@ -35,6 +35,7 @@ void veraRect::setup(int numberOfRectangles, float r){
             an.push_back(ofRandom(-1, 1));
         }
     }
+
 }
 
 void veraRect::draw(int numRects, float d){
@@ -94,6 +95,8 @@ void robbyMolnarScene::setup(){
         v.centerY = space*.5 + centerY - space*3 + space*((int)(i/6));
         veraRects.push_back(v);
     }
+    
+     setSceneName("robbyMolnarScene");
 }
 void robbyMolnarScene::update(){
     

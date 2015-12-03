@@ -1,0 +1,18 @@
+<ofxParameterMidiSync>
+	<ofParameterMidiInfo>
+		<groupHierarchyNames>settings/robbyMolnarSceneParameters/numRectangles</groupHierarchyNames>
+		<dims>1</dims>
+		<controlNum>0</controlNum>
+		<bIsColor>0</bIsColor>
+		<bIsVec>0</bIsVec>
+		<multiDimType>0</multiDimType>
+	</ofParameterMidiInfo>
+	<ofParameterMidiInfo>
+		<groupHierarchyNames>settings/robbyMolnarSceneParameters/disarray</groupHierarchyNames>
+		<dims>1</dims>
+		<controlNum>1</controlNum>
+		<bIsColor>0</bIsColor>
+		<bIsVec>0</bIsVec>
+		<multiDimType>0</multiDimType>
+	</ofParameterMidiInfo>
+</ofxParameterMidiSync>

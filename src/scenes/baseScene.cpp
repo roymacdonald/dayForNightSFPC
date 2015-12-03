@@ -24,6 +24,10 @@ void baseScene::loadCode( string fileName ){
 }
 
 
+void baseScene::setSceneName(string name){
+    sceneName = name;
+    parameters.setName(name+"Parameters");
+}
 
 string baseScene::getCodeWithParamsReplaced(){
     

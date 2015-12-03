@@ -8,6 +8,7 @@ void emptyScene::setup(){
 //    parameters.add(param);
 
     loadCode("emptyScene/exampleCode.cpp");
+     setSceneName("emptyScene");
 }
 
 void emptyScene::update(){

@@ -26,5 +26,6 @@ public:
     ofRectangle dimensions;     // this is the dimensions of
                                 // the surface you are drawing into.
     
-    
+    void setSceneName(string name);
+    string sceneName;
 };

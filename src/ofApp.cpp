@@ -48,6 +48,10 @@ void ofApp::keyPressed(int key){
         SM.mode = DRAW_SIDE_BY_SIDE;
     } else if (key == '1'){
         SM.mode = DRAW_SINGLE;
+    } else if (key == 'l'){
+        SM.learnMidi();
+    } else if (key == 's'){
+        SM.saveLearnedMidi();
     }
 }
 

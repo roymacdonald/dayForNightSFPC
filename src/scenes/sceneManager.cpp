@@ -45,14 +45,16 @@ void sceneManager::setup(){
     currentScene = 0;
     scenes[currentScene]->reset();
     
+
     
     
     panel = new ofxPanel();
-    panel->setup();
+    panel->setup("settings");
     panel->add(scenes[currentScene]->parameters);
     panel->setPosition(ofGetWidth()-300, 20);
 
-    
+    sync.setup(0,panel->getParameter());
+    sync.load("parametersMidiSync/"+ scenes[currentScene]->sceneName + "ParamsSync.xml");
     mode = DRAW_SIDE_BY_SIDE;
     
 }
@@ -62,7 +64,6 @@ void sceneManager::update(){
 }
 
 void sceneManager::draw(){
-    
     
     
     sceneFbo.begin();
@@ -91,6 +92,10 @@ void sceneManager::draw(){
     
     panel->draw();
     
+    sync.drawDebug();
+    
+    ofDrawBitmapStringHighlight(scenes[currentScene]->sceneName, 20, 40);
+    
 }
 
 void sceneManager::advanceScene(){
@@ -102,9 +107,20 @@ void sceneManager::advanceScene(){
     
     delete panel;
     panel = new ofxPanel();
-    panel->setup();
+    panel->setup("settings");
     panel->add(scenes[currentScene]->parameters);
     
     panel->setPosition(ofGetWidth()-300, 20);
+
+    sync.reset();
+    sync.setup(0,panel->getParameter());
+    sync.load("parametersMidiSync/"+ scenes[currentScene]->sceneName + "ParamsSync.xml");
     
-};
+}
+void sceneManager::saveLearnedMidi(){
+    sync.save("parametersMidiSync/"+ scenes[currentScene]->sceneName + "ParamsSync.xml");
+}
+void sceneManager::learnMidi(){
+    sync.learn(!sync.isLearning());
+    
+}

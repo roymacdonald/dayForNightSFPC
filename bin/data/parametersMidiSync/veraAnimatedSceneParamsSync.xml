@@ -1,0 +1,26 @@
+<ofxParameterMidiSync>
+	<ofParameterMidiInfo>
+		<groupHierarchyNames>settings/veraAnimatedSceneParameters/size</groupHierarchyNames>
+		<dims>1</dims>
+		<controlNum>0</controlNum>
+		<bIsColor>0</bIsColor>
+		<bIsVec>0</bIsVec>
+		<multiDimType>0</multiDimType>
+	</ofParameterMidiInfo>
+	<ofParameterMidiInfo>
+		<groupHierarchyNames>settings/veraAnimatedSceneParameters/smoothing</groupHierarchyNames>
+		<dims>1</dims>
+		<controlNum>1</controlNum>
+		<bIsColor>0</bIsColor>
+		<bIsVec>0</bIsVec>
+		<multiDimType>0</multiDimType>
+	</ofParameterMidiInfo>
+	<ofParameterMidiInfo>
+		<groupHierarchyNames>settings/veraAnimatedSceneParameters/opacity</groupHierarchyNames>
+		<dims>1</dims>
+		<controlNum>2</controlNum>
+		<bIsColor>0</bIsColor>
+		<bIsVec>0</bIsVec>
+		<multiDimType>0</multiDimType>
+	</ofParameterMidiInfo>
+</ofxParameterMidiSync>
